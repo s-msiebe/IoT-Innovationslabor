@@ -1,0 +1,46 @@
+<ng4-loading-spinner></ng4-loading-spinner>
+<div *ngIf="devicesShow && hideForInit" class="jumbotron">
+  <h2>Devices</h2>
+  <ul class="list-group" *ngFor="let device of Devices" style="margin-top:15px">
+    <li *ngIf="device.vendorId" class="list-group-item">ID: {{device.id}}</li>
+    <li *ngIf="device.manufacturer" class="list-group-item">Manufacturer: {{device.manufacturer}}</li>
+    <li *ngIf="device.vendorId" class="list-group-item">ProductID: {{device.productId}}</li>
+    <li *ngIf="device.vendorId" class="list-group-item">VendorID: {{device.vendorId}}</li>
+    <li *ngIf="device.vendorId" class="list-group-item">LocationID: {{device.locationId}}</li>
+    <input *ngIf="device.vendorId" type="button" class="btn btn-info" (click)="getDeviceInfo(device.id)" value="Get Information">
+  </ul>
+</div>
+<div *ngIf="!devicesShow" class="jumbotron">
+  <h2>Keine Devices Vorhanden.</h2>
+</div>
+<div *ngIf="SensorBoardInfo" class="jumbotron">
+  <h3>Sensor-Board Informations</h3>
+  <p>Here you can see the current properties of the Sensor-Board.</p>
+  <ul class="list-group">
+    <li class="col-md-6 list-group-item">Context: {{SensorBoardInfo.context.vocab}}</li>
+    <li class="col-md-6 list-group-item">ID: {{SensorBoardInfo.id}}</li>
+    <li class="col-md-6 list-group-item">Type: {{SensorBoardInfo.type}}</li>
+    <li class="col-md-6 list-group-item">RadioType: {{SensorBoardInfo.radio.type}}</li>
+    <li class="col-md-6 list-group-item">Frequenz: {{SensorBoardInfo.radio.frequency}}</li>
+    <li class="col-md-6 list-group-item">Network: {{SensorBoardInfo.radio.network}}</li>
+    <li class="col-md-6 list-group-item">Client: {{SensorBoardInfo.radio.client}}</li>
+    <li class="col-md-6 list-group-item">Password: {{SensorBoardInfo.radio.password}}</li>
+  </ul>
+  <br><br><br><br>
+  <h3>Radio Configurations</h3>
+  <p>Please choose a Radio Config for your Device.</p>
+  <table class="table">
+    <tr>
+      <th></th>
+      <th>Type</th>
+      <th>Frequenz</th>
+    </tr>
+    <tr *ngFor="let config of radioconfigs">
+      <td class="custom-control custom-radio"><input type="radio" name="radiogroup" (change)="onSelectionChange(config)"></td>
+      <td>{{config.type}}</td>
+      <td>{{config.frequency}}</td>
+    </tr>
+  </table>
+  <button style="float:right" class="btn btn-outline-info" type="button" (click)="startInitialize()" name="button">Initialize</button>
+</div>
+<button type="button" class="btn btn-primary" (click)="showDevice()" name="button">Show Device</button>
