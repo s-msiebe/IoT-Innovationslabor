@@ -24,35 +24,37 @@ This library provides the Arduino functionality.
 ----------
 In order to use our example-implementations you additionally need the following libraries:
 
-- Brightness-sensor
-- **Adafruit Sensor**
+**Brightness-sensor**
+- Adafruit Sensor
 https://github.com/adafruit/Adafruit_Sensor
-- **Adafruit TSL2561**
+- Adafruit TSL2561
 https://github.com/adafruit/Adafruit_TSL2561
 
-- PullUpSetupButtonDevice
-- **Arduino**
+**PullUpSetupButtonDevice**
+- Arduino
 https://github.com/arduino/Arduino
 
-- SingleLedStatusDevice
-- **Arduino**
-https://github.com/arduino/Arduino
-- EmptyTestRadioDevice
-- **Arduino**
-https://github.com/arduino/Arduino
-- STM32SensorBoard
-- **Arduino**
+**SingleLedStatusDevice**
+- Arduino
 https://github.com/arduino/Arduino
 
-- EmptyEEPROM
-- **Arduino**
+**EmptyTestRadioDevice**
+- Arduino
 https://github.com/arduino/Arduino
 
-- Stm32EEPROM
-- **Arduino**
+**STM32SensorBoard**
+- Arduino
 https://github.com/arduino/Arduino
-- **ArduinoJson**
+
+**EmptyEEPROM**
+- Arduino
+https://github.com/arduino/Arduino
+
+**Stm32EEPROM**
+- Arduino
+https://github.com/arduino/Arduino
+- ArduinoJson
 https://github.com/bblanchon/ArduinoJson
-- **EEPROM**
+- EEPROM
 https://github.com/arduino/Arduino/tree/master/hardware/arduino/avr/libraries/EEPROM
 
