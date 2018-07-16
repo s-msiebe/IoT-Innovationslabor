@@ -1,0 +1,53 @@
+<!--<form (submit)="onSendSubmit()" class="col-md-6">
+  <div class="form-group">
+    <label>Vorname</label>
+    <input type="text" [(ngModel)]="vorname" name="vorname" class="form-control" placeholder="Vorname">
+  </div>
+  <div class="form-group">
+    <label>Nachname</label>
+    <input type="text" [(ngModel)]="nachname" name="nachname" class="form-control" name="nachname" placeholder="Nachname">
+  </div>
+  <div class="form-group has-success">
+    <label class="form-control-label" for="inputSuccess1">Valid input</label>
+    <input type="text" value="correct value" class="form-control is-valid" id="inputValid">
+    <div *ngIf="testbool" class="valid-feedback">Success! You've done it.</div>
+  </div>
+  <button type="submit" class="btn btn-primary">Anlegen</button>
+  <button type="button" class="btn btn-danger" style="float:right" ng-hide="true">Speichern</button>
+</form>
+<br><br><br><br>-->
+<div class="row" style="margin-bottom:40px;">
+  <div class="col-md-6">
+    <form (submit)="sendRadioConfig()">
+      <div class="form-group">
+        <label>Type</label>
+        <input type="text" [(ngModel)]="type" name="type" class="form-control" placeholder="Type">
+      </div>
+      <div class="form-group">
+        <label>Frequency</label>
+        <input type="text" [(ngModel)]="frequency" name="frequency" class="form-control" placeholder="Frequency">
+      </div>
+      <div class="form-group">
+        <label>Network</label>
+        <input type="text" [(ngModel)]="network" name="network" class="form-control" placeholder="Network">
+      </div>
+      <div class="form-group">
+        <label>Client</label>
+        <input type="text" [(ngModel)]="client" name="client" class="form-control" placeholder="Client">
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="text" [(ngModel)]="password" name="password" class="form-control" placeholder="Password">
+      </div>
+      <button type="submit" class="btn btn-primary">Anlegen</button>
+      <button *ngIf="showSaveButton" (click)="deleteConfig()" type="button" class="btn btn-danger" style="float:right; margin-left:5px">Löschen</button>
+      <button *ngIf="showSaveButton" (click)="saveChanges()" type="button" class="btn btn-info" style="float:right">Speichern</button>
+    </form>
+  </div>
+  <div *ngIf="radioconfigs" class="jumbotron col-md-6">
+    <h2>RadioConfigs {{radioconfigs.length}}</h2>
+    <ul class="list-group" *ngFor="let radio of radioconfigs" style="margin-top:15px">
+      <a (click)="editRadioConfig(radio)" class="list-group-item list-group-item-action">Type: {{radio.type}} || Frequenz: {{radio.frequency}}</a>
+    </ul>
+  </div>
+</div>

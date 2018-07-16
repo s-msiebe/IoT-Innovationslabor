@@ -1,6 +1,6 @@
 # WebInterface LinkedIoT
 
-Run `npm run installwebinterface` in `WebInterface/` to install all the dependencies.
+Run `npm run installwebinterface` in `/Code/WebInterface/` to install all the dependencies.
 
 ## Server
 
