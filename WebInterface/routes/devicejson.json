@@ -1,0 +1,14 @@
+[
+ {
+  "@id": "file:/COM3",
+  "manufacturer": "LeafLabs, LLC",
+  "serialNumber": "5&521A615&0&4",
+  "pnpId": "USB\\VID_1EAF&PID_0004\\5&521A615&0&4",
+  "locationId": "Port_#0004.Hub_#0001",
+  "vendorId": "1EAF",
+  "productId": "0004"
+ },
+ {
+  "@id": "virtual://tty0"
+ }
+]

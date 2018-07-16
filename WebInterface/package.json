@@ -1,0 +1,26 @@
+{
+  "name": "linkediot",
+  "version": "1.0.0",
+  "description": "WebInterface for LinkedIoT",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "webinterface": "cd ./angular-src/ && ng serve",
+    "installwebinterface": "npm install && npm install -g @angular/cli@1.5.2 && cd ./angular-src/ && npm install"
+  },
+  "author": "Chris Buchhorn",
+  "license": "ISC",
+  "dependencies": {
+    "@types/underscore": "^1.8.6",
+    "bluebird": "^3.5.1",
+    "body-parser": "^1.18.2",
+    "commander": "^2.12.2",
+    "cors": "^2.8.4",
+    "express": "^4.16.2",
+    "http-streams": "^1.0.0",
+    "mongodb": "^3.0.0-rc0",
+    "mongoose": "^4.13.7",
+    "serialport": "^6.0.4",
+    "underscore": "^1.8.3"
+  }
+}
