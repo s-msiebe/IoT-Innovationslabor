@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "angulardev" : "cd ./angular-src/ && ng serve",
-    "webinterface": "npm install && npm install -g @angular/cli@1.6.1 && cd ./angular-src/ && npm install"
+    "webinterface" : "cd ./angular-src/ && ng serve",
+    "installwebinterface": "npm install && npm install -g @angular/cli@1.6.1 && cd ./angular-src/ && npm install"
   },
   "author": "Chris Buchhorn",
   "license": "ISC",
