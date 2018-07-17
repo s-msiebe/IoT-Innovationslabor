@@ -7,8 +7,7 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'radio',
-  templateUrl: './radio.component.html',
-  styleUrls: ['./radio.component.css'],
+  templateUrl: './radio.component.html'
 
 })
 export class RadioComponent implements OnInit {
