@@ -2,7 +2,7 @@
 
 ## NPM
 
-At first if you don´t have npm you can download it [here](https://www.npmjs.com/get-npm "Der Linktitel").
+At first if you don´t have npm you can download it [here](https://www.npmjs.com/get-npm "Download npm").
 
 ## Webinterface
 
